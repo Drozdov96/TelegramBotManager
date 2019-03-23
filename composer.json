@@ -1,0 +1,17 @@
+{
+    "name": "telegram-bot/spending-counter-bot",
+    "description": "This bot will count user spendings, store and show it to the user.",
+    "type": "project",
+    "license": "",
+    "config": {
+        "platform": {
+            "php": "7.1"
+        }
+    },
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Models\\": "models"
+        }
+    }
+}
