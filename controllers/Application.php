@@ -8,8 +8,7 @@ use Models\TelegramBotRequest;
 class Application
 {
     private $bot;
-    private const SPENDING_COUNTER_BOT_DB_CONNECTION = "pgsql:host=localhost port=5432 
-        dbname=battleship user=www-data password=5621";
+    private const SPENDING_COUNTER_BOT_DB_CONNECTION = "";
 
     public function __construct()
     {
@@ -97,7 +96,7 @@ class Application
 
     protected function sendMessage(string $jsonResponse)
     {
-        $url = 'https://api.telegram.org/bot123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11/sendMessage';
+        $url = 'https://api.telegram.org/sendMessage';
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_URL, $url);
